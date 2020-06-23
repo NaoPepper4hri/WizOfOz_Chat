@@ -48,9 +48,10 @@ Werkzeug==0.16.0
 
 ### Note: The ip of the robot has to be set to your robot's IP in code
 
-##Running the code:
+## Running the code:
 
 >> python pepperSays.py
 
 This will start up the server side and the html page will be accessable by default at : http://127.0.0.1:5000/
+
 It will show on the commandline what url it is running on. Copy it to any web browser and make your robot talk.

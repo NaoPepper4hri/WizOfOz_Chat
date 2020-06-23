@@ -1,0 +1,95 @@
+<html>
+<head>
+<meta charset="utf-8" />
+</head>
+	<!-- Creates buttons which can be clicked, leading pepper to look in the direction of the voice, lock the head position, and increase/reduce the volume of the voice (respectively) -->
+<form action='/pepper_focus/' method=POST>
+	<table>
+	<tr>
+		<td><input type=submit name="focus" value="Look at me" /></td>	
+		<td><input type=submit name="focus" value="Lock head" /></td>
+		<td><input type=submit name="focus" value="Speak louder" /></td>
+		<td><input type=submit name="focus" value="Speak softer" /></td>
+		<td><input type=submit name="focus" value="Wake up" /></td>
+		<td><input type=submit name="focus" value="Rest" /></td>
+	 </tr>
+	 <tr>
+	 	<td></td>
+	 </tr>		
+	</table>
+
+    
+    
+	<!-- Below creates a text box in which an angle can be typed. Also creates a button which upon clicked, makes Pepper look via that angle -->
+</form>
+<p/>
+<form action='/pepper_look_at/' method=POST>	
+	<table>
+	<tr>
+		<td>Enter Pepper's head angles: </td>
+    	<td><textarea name="lookAt" rows=1 cols=60></textarea></td>
+    </tr>
+    <tr>
+		<td><input type="submit" value="Look here"/></td>
+	</tr>
+	</table>
+    
+    
+    
+<!-- Below creates the table of buttons which can be clicked - triggering Pepper to say certain phrases -->    
+</form>
+<p/>
+<form action='/pepper_say_generic/' method=POST>
+	<table>    
+        
+        
+    <tr><td><b>Long Fillers</b></td></tr> <!-- 'Long Fillers' Panel --> 
+<tr>
+	<td><input type=submit name="preset_text" value="Hello! Can you help?" /></td>
+	<td><input type=submit name="preset_text" value="Would you like me to repeat the question?" /></td>
+	<td><input type=submit name="preset_text" value="I have another question!" /></td>    
+	<td><input type=submit name="preset_text" value="Okay, that is enough questions for now!" /></td>
+</tr> 
+    <tr><td><b>Introduction</b></td><!-- 'Introduction' Panel -->
+<tr>
+<td><input type=submit name="preset_text" value="Hello there! My name, is Nao. What is your name?" /></td>
+<td><input type=submit name="preset_text" value="Nice to meet you!" /></td>
+<td><input type=submit name="preset_text" value="Hello there!" /></td>
+<td><input type=submit name="preset_text" value="My name is Nao" /></td>
+<td><input type=submit name="preset_text" value="What is your name?" /></td>
+<td><input type=submit name="preset_text" value="Oooooh, I like that name!" /></td>
+<td><input type=submit name="preset_text" value="Are you comfortable and ready to start?" /></td>
+</tr
+
+
+    
+<tr><td><b>End</b></td></tr> <!-- 'End' Panel --> 
+<tr>
+
+
+<td><input type=submit name="preset_text" value="That's lovely of you to say so!" /></td>
+<td><input type=submit name="preset_text" value="Thank you for your cooperation!" /></td>
+<td><input type=submit name="preset_text" value="Thank you!" /></td>
+<td><input type=submit name="preset_text" value="It was nice to meet you!" /></td>
+<td><input type=submit name="preset_text" value="It was nice to chat with you!" /></td>
+<td><input type=submit name="preset_text" value="Enjoy the rest of the experiment!" /></td>
+<td><input type=submit name="preset_text" value="Guy! We are finished!" /></td>
+
+<tr><td><b>Help fillers</b></td></tr> <!-- 'help' Panel --> 
+
+
+</table>
+</form>
+
+<!-- ------------------Below is creation of Pepper Text Box--------------------- -->
+
+<div>
+<form action='/pepper_say_text/' method=POST>	
+	Type Speech Manually: <br/>
+	<textarea name="pepper_says" rows=4 cols=60 wrap="soft"></textarea><br/>
+	<input type="submit" value="Submit"/>
+</form>
+</div>
+
+</html>
+
